@@ -16,16 +16,16 @@
     <body>
         <div th:replace="header :: header">...</div>
         <div class="container" style="margin-top: 50px">
-            <h2 class="alert alert-dark">Editar Venda</h2>
+            <h2 class="alert alert-dark">Editar Saída</h2>
 	    <div class="row" >
                 <div class="col">
                     <form action="#" th:action="@{/vendas}" th:object="${venda}" method="post">
                         <input type="hidden" th:field="*{id}" id="id">
-                        <h3> Dados da Venda:</h3>
+                        <h3> Dados da Saída:</h3>
                         <hr>
                         <div class="row">
                             <div class="col-md-12 mb-3">
-                                <label for="Data da Venda">Data da Venda</label>
+                                <label for="Data da Venda">Data da Saída</label>
                                 <input type="date" th:field="*{dataVenda}" class="form-control">
                             </div>  
                             <div class="col-md-12 mb-3">
@@ -74,7 +74,7 @@
                         <div class="row">    
                             <div class="col">
                                 <hr>
-                                <input id="adicionarProduto" type="submit" value="Adicionar" class="btn btn-primary btn-block">    
+                                <input id="retirarProduto" type="submit" value="Retirar" class="btn btn-primary btn-block">    
                             </div>   
                         </div>
                         <hr>

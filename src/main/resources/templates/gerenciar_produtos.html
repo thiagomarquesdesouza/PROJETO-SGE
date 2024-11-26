@@ -24,8 +24,8 @@
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Nome</th>
-                        <th>Preço</th>
+                        <th>Produto</th>
+                        <th>Estoque</th>
                         <th>Alterar</th>
                         <th>Excluir</th>
                     </tr>
@@ -34,7 +34,7 @@
                     <tr th:each="p : ${listaProdutos}">
                         <td th:text="${p.id}"></td>
                         <td th:text="${p.nome}"></td>
-                        <td th:text="${p.preco}"></td>
+                        <td th:text="${p.total}"></td>
                         <td><a th:href="@{/produtos/{id}(id=${p.id})}" class="btn btn-warning"><i class="bi bi-pencil"></i></a></td>
                         <td>
                             <form action="#" th:action="@{/produtos/{id}(id=${p.id})}" th:method="delete">

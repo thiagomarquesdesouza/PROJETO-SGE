@@ -24,7 +24,7 @@ public class Produto{
     private long id;
     @Size(min = 1, message = "O nome do produto precisa ser válido.")
     private String nome;
-    private float preco;
+    private float total;
 
     @Override
     public String toString() {

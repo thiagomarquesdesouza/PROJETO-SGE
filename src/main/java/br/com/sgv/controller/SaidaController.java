@@ -3,7 +3,6 @@ package br.com.sgv.controller;
 import br.com.sgv.model.Item;
 import br.com.sgv.model.Venda;
 import br.com.sgv.repository.ProdutoRepository;
-import br.com.sgv.repository.VendaRepository;
 import jakarta.validation.Valid;
 import java.util.Iterator;
 import java.util.Optional;
@@ -15,6 +14,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import br.com.sgv.repository.SaidaRepository;
 
 /**
  *
@@ -23,10 +23,10 @@ import org.springframework.web.bind.annotation.PostMapping;
  * @brief class VendaController
  */
 @Controller
-public class VendaController {
+public class SaidaController {
 
     @Autowired
-    private VendaRepository vendaRepository;
+    private SaidaRepository vendaRepository;
     @Autowired
     private ProdutoRepository produtoRepository;
     private Venda venda;
@@ -64,6 +64,7 @@ public class VendaController {
         }
         this.venda.setDataVenda(venda.getDataVenda());
         vendaRepository.save(this.venda);
+        
         return "redirect:/vendas";
     }
     

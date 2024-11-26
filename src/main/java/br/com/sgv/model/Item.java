@@ -38,4 +38,8 @@ public class Item {
         return produto.getNome() + " " + quantidade;
     }
 
+    Object getPreco() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 }

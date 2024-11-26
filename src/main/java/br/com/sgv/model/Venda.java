@@ -57,6 +57,8 @@ public class Venda implements Serializable{
     }
     
     public void adicionarItem(Item item){
+        float dif = item.getProduto().getTotal() - item.getQuantidade();
+        item.getProduto().setTotal(dif);
         listaItens.add(item);
     }
     
@@ -64,12 +66,5 @@ public class Venda implements Serializable{
         listaItens.remove(item);
     }
     
-    public float calcularTotal(){
-        float soma = 0;
-        for (Item i : listaItens){
-            soma += i.getProduto().getPreco() * i.getQuantidade();
-        }
-        return soma;
-    }
-    
+ 
 }

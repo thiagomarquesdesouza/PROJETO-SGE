@@ -7,6 +7,6 @@ import br.com.sgv.model.Venda;
  *
  * @author Pablo Rangel <pablo.rangel@gmail.com>
  */
-public interface VendaRepository extends CrudRepository<Venda,Long>{
+public interface SaidaRepository extends CrudRepository<Venda,Long>{
     
 }

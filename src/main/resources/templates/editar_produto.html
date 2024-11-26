@@ -3,7 +3,7 @@
       xmlns:th="http://www.thymeleaf.org">
     <head> 
         <meta charset="utf-8"/>
-        <title>Sistema Gerenciador de Vendas (SGV)</title>
+        <title>Sistema Gerenciador de Estoque (SGE)</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap5.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
@@ -24,17 +24,17 @@
                 <hr>
                 <div class="row">
                     <div class="col-md-12 mb-3">
-                        <label for="nome">Nome: </label>
+                        <label for="nome">Produto: </label>
                         <input type="text" minlength="1" th:field="*{nome}" id="nome" placeholder="Nome do Produto" class="form-control">
                     </div>    
                     <span th:if="${#fields.hasErrors('nome')}" th:errors="*{nome}" class="alert alert-warning"></span>                        
                 </div>
                 <div class="row">
                     <div class="col-md-12 mb-3">
-                        <label for="preco">Preço:</label>
-                        <input type="number" min="0" th:field="*{preco}" id="preco" placeholder="Preço" class="form-control">
+                        <label for="total">Quantidade:</label>
+                        <input type="number" min="0" th:field="*{total}" id="total" placeholder="Total" class="form-control">
                     </div>    
-                    <span th:if="${#fields.hasErrors('preco')}" th:errors="*{preco}" class="alert alert-warning"></span>
+                    <span th:if="${#fields.hasErrors('total')}" th:errors="*{preco}" class="alert alert-warning"></span>
                 </div>
                 <hr class="mb-4">
                 <input type="submit" value="Salvar" class="btn btn-success btn-block">

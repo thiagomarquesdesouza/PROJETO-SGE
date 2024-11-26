@@ -11,8 +11,8 @@
     <groupId>br.com</groupId>
     <artifactId>sgv</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sgv</name>
-    <description>Sistema Gerenciador de Vendas</description>
+    <name>sge</name>
+    <description>Sistema Gerenciador de estoque</description>
     <properties>
         <java.version>17</java.version>
     </properties>
