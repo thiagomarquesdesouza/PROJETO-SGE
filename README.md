@@ -16,6 +16,7 @@ Sistema-exemplo para os alunos da disciplina de Programação Orientada a Objeto
 7- Coloque no campo JDBC URL: jdbc:h2:~/db
 8- Coloque no campo user: sgv
 9- Coloque no campo password: 123  
+
 10- Cole o seguinte comando na caixa de comandos: 
 
 insert into Usuario (login,senha, papel, id) values
